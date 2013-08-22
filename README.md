@@ -1,13 +1,15 @@
 # Python-openam
 
-Python-openam is a REST client for OpenAM servers where this
-implement the API described [here](https://wikis.forgerock.org/confluence/display/openam/Use+OpenAM+RESTful+Services)
+Python-openam is a REST client for OpenAM servers.
+The API implemented is described [here](https://wikis.forgerock.org/confluence/display/openam/Use+OpenAM+RESTful+Services)
 
 
 
 ## Install
 
 ```
+$ git clone https://github.com/pfreixes/python-openam
+$ cd pyton-openam
 $ python setup.py install
 ```
 
@@ -26,4 +28,4 @@ AQIC5wM2LY4SfczncpY2PEufFAyRqXP2oW_Qkb_g80AgNOw.*AAJTSQACMDEAAlNLABM0Mjk0NDEwMjA
 
 ## Other
 
-Thanks to [OriolRius](https://github.com/oriolrius) for fund this project, Standing on the shoulders of giants
+Thanks to [Oriol Rius](https://github.com/oriolrius) for fund this project, Standing on the shoulders of giants
