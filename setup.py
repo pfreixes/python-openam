@@ -12,4 +12,4 @@ setup(name='python-openam',
       description='Python REST client for OpenAm servers',
       author='Pau Freixes',
       author_email='pfreixes@gmail.com',
-      packages = ['python-openam'])
+      packages = ['openam'])
