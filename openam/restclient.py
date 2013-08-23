@@ -55,7 +55,7 @@ class ClientException(Exception):
     >>     print str(c)
     >>     raise c
     """
-    def __init__(self, stauts_code, description):
+    def __init__(self, status_code, description):
         self.status_code = status_code
         Exception.__init__(self, description)
 
@@ -159,6 +159,7 @@ class Client:
 
         try:
             type_, value = r.text.split("=")
+            value = value.strip(" \r\n")
         except Exception, e:
             raise ClientException(r.status_code,
                                   "Some error has ocurred getting the result value from %s"
@@ -172,7 +173,6 @@ class Client:
         """
         kwargs = {}
         r = self._token_id_request(urljoin(self._url, Client._logout_resource), **kwargs)
-        self._token_id = None
 
     def attributes(self, *args):
         """
